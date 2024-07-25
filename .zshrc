@@ -1,9 +1,11 @@
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-export BAT_THEME="Monokai Extended Origin"
-export PATH="$PATH:$(yarn global bin)"
+export BAT_THEME="Monokai Extended"
+#export PATH="$PATH:$(yarn global bin)"
 export VI_MODE_RESET_PROMPT_ON_MODE_CHANGE=true
 export VI_MODE_SET_CURSOR=true
+# Force the use of aliases (You should use)
+export YSU_HARDCORE=1
 
 ZSH_THEME="robbyrussell"
 HYPHEN_INSENSITIVE="true"
