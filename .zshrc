@@ -91,7 +91,6 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 source <(/home/linuxbrew/.linuxbrew/bin/fzf --zsh)
 source /home/lasky/.fzf-tab-completion/zsh/fzf-zsh-completion.sh
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 eval "$(~/.local/bin/mise activate zsh)"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 zstyle ':completion:*' fzf-search-display true
