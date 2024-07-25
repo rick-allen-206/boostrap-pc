@@ -2,6 +2,8 @@
 export ZSH="$HOME/.oh-my-zsh"
 export BAT_THEME="Monokai Extended Origin"
 export PATH="$PATH:$(yarn global bin)"
+export VI_MODE_RESET_PROMPT_ON_MODE_CHANGE=true
+export VI_MODE_SET_CURSOR=true
 
 ZSH_THEME="robbyrussell"
 HYPHEN_INSENSITIVE="true"
@@ -19,6 +21,7 @@ plugins=(
   kubectx
   sudo
   terraform
+  vi-mode
   web-search
   you-should-use
   zsh-autosuggestions
@@ -36,6 +39,7 @@ zstyle ':completion:*' fzf-search-display true
 
 # Customize prompt
 export RPROMPT='$(tf_prompt_info)'
+export RPROMPT="\$(vi_mode_prompt_info)$RPROMPT"
 ZSH_THEME_TF_PROMPT_PREFIX='%{$fg[blue]%}'
 ZSH_THEME_TF_PROMPT_SUFFIX='%{$reset_color%}'
 
